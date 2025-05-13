@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bebas+Neue&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;   
+    -ms-user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ffffff, #ffe1eb);
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.heading {
+    font-size: clamp(24px, 5vw, 50px);
+    font-weight: 700;
+    color: #df2d58;
+    margin-bottom: 10px;
+}
+
+.sub-note {
+    font-size: clamp(16px, 3vw, 20px);
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-timer {
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.sub-timer:hover {
+    transform: scale(1.05);
+}
+
+.digit {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(30px, 8vw, 70px);
+    color: #c7920b;
+    padding: 2rem 0;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.digit-name {
+    background-color: #df2d58;
+    color: white;
+    font-size: 18px;
+    padding: 0.5rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    border-radius: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #df2d58;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    position: absolute;
+    background: #ffffff;
+    padding: 15px;
+    bottom: 0;
+    text-align: center;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #df2d58;
+}
