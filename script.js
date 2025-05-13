@@ -21,7 +21,6 @@ function timer() {
     document.querySelector("#min").innerHTML = min;
     document.querySelector("#sec").innerHTML = sec;
 
-    // Tính % tiến trình
     const total = target_mili_sec - start_mili_sec;
     const done = now - start_mili_sec;
     const percent = Math.min((done / total) * 100, 100);
