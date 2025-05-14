@@ -59,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 70px;
+    min-width: 75px;
     max-width: 180px;
 }
 
@@ -86,7 +86,7 @@ body {
 .digit-name {
     background-color: #df2d58;
     color: #ffffff;
-    font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 20px);
     padding: 8px 0;
     border-top: 1px solid #eee;
 }
