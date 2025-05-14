@@ -65,8 +65,9 @@ body {
 
 .digit {
     font-size: clamp(30px, 6vw, 70px); 
-    font-weight: bold;
-    color: #000000;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #cbae09;
+    letter-spacing: clamp(1px, 0.5vw, 4px);
     margin: auto;
 }
 
@@ -83,3 +84,4 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
